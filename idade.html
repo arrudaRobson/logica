@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Idades</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var nomePessoa = prompt("Digite seu nome");
+            var diaNascPessoa = parseInt(prompt(nomePessoa + " digite o dia de seu nascimento. Ex.: 23"));
+            var mesNascPessoa = parseInt(prompt(nomePessoa + " digite o mês de seu nascimento. Ex.: 3"));
+            var anoNascPessoa = parseInt(prompt(nomePessoa + " digite o ano de seu nascimento. Ex.: 2000"));
+            var diaAtual = parseInt(prompt(nomePessoa + " digite o dia atual. Ex.: 23"));
+            var mesAtual = parseInt(prompt(nomePessoa + " digite o mês atual. Ex.: 3"));
+            var anoAtual =parseInt(prompt(nomePessoa + " digite o ano atual. Ex.: 2018"));
+            var idadePessoa = anoAtual - anoNascPessoa;
+            if (mesNascPessoa >= mesAtual && diaAtual <= diaNascPessoa) {
+                idadePessoa;
+            }
+
+            else{
+                idadePessoa --;
+            }
+
+            document.write("Olá, " + nomePessoa);
+            document.write("<br>");
+            document.write("<hr>");
+            document.write(nomePessoa + " nasceu dia " + diaNascPessoa + "/" + mesNascPessoa + "/" + anoNascPessoa);
+            document.write("<br>");
+            document.write("Hoje é dia " + diaAtual + "/" + mesAtual + "/" + anoAtual);
+            document.write("<br>");
+            document.write(nomePessoa + " tem " + idadePessoa + " anos.");
+        </script>
+    </body>
+</html>
