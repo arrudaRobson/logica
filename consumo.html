@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consumo</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script type="text/javascript">
+
+        function converteFloat (msg){
+            return parseFloat(prompt(msg));
+        }
+        var teste = converteFloat("informe");
+        document.write(teste);
+        var gasolina = parseFloat(prompt("Preço do litro da gasolina"));
+        var alcool = parseFloat(prompt("Preço do litro do álccol"));
+        var tanque =  parseFloat(prompt("Quantidade de litros que cabem no tanque"));
+        var precoGasolina = tanque * gasolina;
+        var precoAlcool = tanque * alcool;
+        document.write("Valor gasto para encher o tanque com gasolina R$: " + precoGasolina);
+        document.write("<br>Valor gasto para encher o tanque com alccol R$: " + precoAlcool);
+        if (precoGasolina < precoAlcool){
+            document.write("<br>Com gasolina você economizaria R$: " + (precoAlcool - precoGasolina));
+        }
+
+        if (precoAlcool == precoGasolina){
+            document.write("<br>Os valores são iguais");
+        }
+
+        else{
+            document.write("<br>Com álcool você economizaria R$: " + (precoGasolina - precoAlcool));
+        }
+
+    </script>
+    </body>
+</html>
