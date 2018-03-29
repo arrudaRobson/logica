@@ -15,11 +15,11 @@
             var anoAtual =parseInt(prompt(nomePessoa + " digite o ano atual. Ex.: 2018"));
             var idadePessoa = anoAtual - anoNascPessoa;
             if (mesNascPessoa >= mesAtual && diaAtual <= diaNascPessoa) {
-                idadePessoa;
+                idadePessoa -- ;
             }
 
             else{
-                idadePessoa --;
+                idadePessoa;
             }
 
             document.write("Olá, " + nomePessoa);
